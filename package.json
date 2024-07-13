@@ -1,0 +1,22 @@
+{
+  "name": "iriksanatco.ir",
+  "version": "1.0.0",
+  "description": "iriksanatco website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisinasoltani/Iriksanatco.ir.git"
+  },
+  "author": "alisina soltani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisinasoltani/Iriksanatco.ir/issues"
+  },
+  "homepage": "https://github.com/alisinasoltani/Iriksanatco.ir#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
