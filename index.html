@@ -6,7 +6,35 @@
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <link rel="stylesheet" href="output.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <title>Iriksanatco</title>
+        <style>
+            .swiper {
+              width: 100%;
+              height: 100%;
+            }
+        
+            .swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+        
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .swiper-button-next, .swiper-button-prev {
+                color: black;
+                --swiper-navigation-size: 1.4rem;
+            }
+          </style>
     </head>
     <body class="iransans">
         <navbar>
@@ -22,7 +50,18 @@
         </navbar>
         <main>
             <section>
-                <div class="w-full bg-gray-500 h-[70vh]"></div>
+                <div class="w-full bg-gray-300 lg:h-[70vh] h-[40vh]">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                </div>
             </section>
             <section>
                 <div class="w-full flex flex-col items-end pt-[3rem]">
@@ -75,5 +114,15 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
     </body>
 </html>

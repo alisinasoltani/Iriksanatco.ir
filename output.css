@@ -839,6 +839,10 @@ video {
   height: 20rem;
 }
 
+.h-\[40vh\] {
+  height: 40vh;
+}
+
 .w-\[60vh\] {
   width: 60vh;
 }
@@ -1871,6 +1875,11 @@ video {
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2614,6 +2623,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-\[70vh\] {
+    height: 70vh;
+  }
+
   .lg\:gap-12 {
     gap: 3rem;
   }
