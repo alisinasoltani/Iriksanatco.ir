@@ -823,24 +823,20 @@ video {
   display: none;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
-}
-
-.h-\[12rem\] {
-  height: 12rem;
-}
-
 .h-\[20rem\] {
   height: 20rem;
 }
 
 .h-\[40vh\] {
   height: 40vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .w-\[60vh\] {
@@ -861,14 +857,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[12rem\] {
-  width: 12rem;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
 }
 
 .flex-shrink {
@@ -1393,12 +1381,12 @@ video {
   gap: 3rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1865,9 +1853,9 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray-500 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-gray-400 {
@@ -1875,9 +1863,9 @@ video {
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
+.bg-gray-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2000,6 +1988,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -2013,11 +2006,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pt-\[3rem\] {
@@ -2080,24 +2068,32 @@ video {
   vertical-align: super;
 }
 
-.text-\[25px\] {
-  font-size: 25px;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .text-\[15px\] {
   font-size: 15px;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-\[22px\] {
+  font-size: 22px;
 }
 
-.font-\[12px\] {
-  font-weight: 12px;
+.text-\[25px\] {
+  font-size: 25px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[23px\] {
+  font-size: 23px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
@@ -2627,6 +2623,10 @@ video {
     height: 70vh;
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:gap-12 {
     gap: 3rem;
   }
@@ -2636,16 +2636,16 @@ video {
     padding-right: 3rem;
   }
 
-  .lg\:text-\[20px\] {
-    font-size: 20px;
-  }
-
   .lg\:text-\[18px\] {
     font-size: 18px;
   }
 
-  .lg\:text-\[\] {
-    color: ;
+  .lg\:text-\[22px\] {
+    font-size: 22px;
+  }
+
+  .lg\:text-\[25px\] {
+    font-size: 25px;
   }
 }
 
