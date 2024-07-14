@@ -724,10 +724,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-\[3rem\] {
-  margin-top: 3rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -827,12 +823,20 @@ video {
   display: none;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .h-\[70vh\] {
   height: 70vh;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
+.h-\[12rem\] {
+  height: 12rem;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
 }
 
 .w-\[60vh\] {
@@ -853,6 +857,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[12rem\] {
+  width: 12rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .flex-shrink {
@@ -1381,10 +1393,6 @@ video {
   gap: 2rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1834,6 +1842,11 @@ video {
   border-color: rgb(55 114 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#080708\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 7 8 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FDCA40\] {
   --tw-bg-opacity: 1;
   background-color: rgb(253 202 64 / var(--tw-bg-opacity));
@@ -1849,9 +1862,9 @@ video {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#080708\] {
+.bg-gray-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(8 7 8 / var(--tw-bg-opacity));
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1974,6 +1987,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1984,41 +2002,7 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-\[3rem\] {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .pt-\[3rem\] {
-  padding-top: 3rem;
-}
-
-.pt-12 {
   padding-top: 3rem;
 }
 
