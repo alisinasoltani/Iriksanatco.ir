@@ -31,7 +31,7 @@
             }
 
             .swiper-button-next, .swiper-button-prev {
-                color: black;
+                color: #820600;
                 --swiper-navigation-size: 1.4rem;
             }
 
@@ -78,7 +78,7 @@
                     bg-[#FDCA40] inline-flex border-r-[15px] border-[#3772FF]">
                     درباره ما
                     </h2>
-                    <div class="flex lg:flex-row flex-col gap-8 px-12 my-[2.5rem] text-right
+                    <div class="flex lg:flex-row flex-col gap-8 lg:px-12 px-4 my-[2.5rem] text-right
                     items-center lg:text-[22px] text-[18px]" style="direction: rtl;">
                         <p>
                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.
@@ -89,14 +89,31 @@
             </section>
             <section>
                 <div class="flex flex-col items-center pt-[3rem]">
-                    <h2 class="font-bold lg:text-[25px] text-[22px] bg-[#FDCA40] w-full text-center py-3">محصولات</h2>
-                    <div class="w-full h-[50vh]">
-                        <div class="swiper productSwiper">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">Slide 1</div>
+                    <div class="w-full flex flex-row justify-between items-center bg-[#FDCA40]">
+                        <img class="md:w-[150px] w-[110px] rotate-180" src="images/sectionTitleRight.svg" alt="sectionTitleLeft" draggable="true" />
+                        <h2 class="font-bold lg:text-[25px] text-[20px] text-center py-3">محصولات</h2>
+                        <img class="md:w-[150px] w-[110px]" src="images/sectionTitleRight.svg" alt="sectionTitleRight" draggable="true" />
+                    </div>
+                    <div class="w-full h-[25rem]">
+                        <div class="swiper productSwiper my-6">
+                            <div class="swiper-wrapper px-12">
+                              <div class="swiper-slide bg-[#F5F5F5] flex flex-col 
+                              text-right gap-4 rounded-2xl max-w-[20rem]">
+                                <div>
+                                    <img src="images/products/product1.png" alt="Iriksanatco Product 1">
+                                </div>
+                                <div class="mb-4 text-right flex flex-col gap-4">
+                                    <h3 class="text-xl font-bold px-4">نام محصول</h3>
+                                    <p class="text-lg px-4" style="direction: rtl;">
+                                        توضیحات مربوط به محصول در این قسمت نوشته می شود.
+                                    </p>
+                                </div>
+                              </div>
                               <div class="swiper-slide">Slide 2</div>
                               <div class="swiper-slide">Slide 3</div>
                               <div class="swiper-slide">Slide 4</div>
+                              <div class="swiper-slide">Slide 5</div>
+                              <div class="swiper-slide">Slide 6</div>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -106,14 +123,17 @@
             </section>
             <section>
                 <div class="flex flex-col items-center pt-[3rem]">
-                    <h2 class="font-bold text-[25px] bg-[#FDCA40] w-full text-center py-3">همکاران</h2>
-                    <div class="w-full h-[50vh]">
+                    <div class="w-full flex flex-row justify-between items-center bg-[#FDCA40]">
+                        <img class="md:w-[150px] w-[110px] rotate-180" src="images/sectionTitleRight.svg" alt="sectionTitleLeft" draggable="true" />
+                        <h2 class="font-bold lg:text-[25px] text-[20px] text-center py-3">همکاران</h2>
+                        <img class="md:w-[150px] w-[110px]" src="images/sectionTitleRight.svg" alt="sectionTitleRight" draggable="true" />
+                    </div>
+                    <div class="w-full">
                         <div class="swiper coworkersSwiper" dir="rtl">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">Slide 1</div>
-                              <div class="swiper-slide">Slide 2</div>
-                              <div class="swiper-slide">Slide 3</div>
-                              <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-wrapper my-4">
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4" style="background-color: #fff;">
+                                <img src="images/poolad.png" style="aspect-ratio: 1;" width="200" alt="" />
+                              </div>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -156,17 +176,22 @@
             });
 
             var swiper = new Swiper(".productSwiper", {
-                slidesPerView: 2,
                 spaceBetween: 30,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                freeMode: true,
                 centeredSlides: true,
+                loop: true,
                 breakpoints: {
                     640: {
                         slidesPerView: 2,
-                        spaceBetween: 20,
+                        spaceBetween: 30,
                     },
                     768: {
                         slidesPerView: 3,
@@ -185,6 +210,10 @@
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
                 centeredSlides: true,
                 breakpoints: {
