@@ -5,10 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="" />
         <meta name="description" content="" />
+        <meta name="author" content="Alisina Soltani" />
         <link rel="stylesheet" href="output.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <title>Iriksanatco</title>
         <style>
+            body {
+                -webkit-scroll-behavior: smooth;
+                scroll-behavior: smooth;
+            }
             .swiper {
               width: 100%;
               height: 100%;
@@ -48,31 +53,49 @@
     <body class="iransans">
         <navbar>
             <div class="w-full flex flex-row justify-between items-center
-            lg:px-12 px-6 py-3">
+            lg:px-12 px-6 py-3 fixed bg-white" style="top: 0; z-index: 10000; background-color: white;">
                 <div><img src="./images/logo.jpg" width="100px" alt="iriksanatco logo" /></div>
-                <div class="flex flex-row justify-between lg:gap-12 gap-4 font-bold lg:text-[18px] text-[15px]">
-                    <h3>درباره ما</h3>
-                    <h3>محصولات</h3>
-                    <h3>تماس با ما</h3>
+                <div class="flex flex-row justify-between lg:gap-12 gap-4 font-bold lg:text-[18px]" style="font-size: 13px;">
+                    <h3>
+                        <a href="#about">
+                            درباره ما
+                        </a>
+                    </h3>
+                    <h3>
+                        <a href="#products">
+                            محصولات
+                        </a>
+                    </h3>
+                    <h3>
+                        <a href="#contact">
+                            تماس با ما
+                        </a>
+                    </h3>
                 </div>
             </div>
         </navbar>
         <main>
             <section>
-                <div class="w-full bg-gray-300 lg:h-[70vh] h-[40vh]">
-                    <div class="swiper mySwiper">
+                <div class="w-full bg-gray-300 lg:h-[70vh] h-[40vh] mt-[4rem]">
+                    <div class="swiper sliderSwipper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 4</div>
+                          <div class="swiper-slide">
+                            <img src="images/10.jpg" alt="iriksanatco home page picture 1" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/11.jpg" alt="iriksanatco home page picture 2" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/13.jpg" alt="iriksanatco home page picture 3" />
+                          </div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                       </div>
                 </div>
             </section>
-            <section>
+            <!-- about us -->
+            <section id="about">
                 <div class="w-full flex flex-col items-end pt-[3rem]">
                     <h2 class="font-bold lg:text-[25px] text-[22px] py-3 px-10
                     bg-[#FDCA40] inline-flex border-r-[15px] border-[#3772FF]">
@@ -81,13 +104,146 @@
                     <div class="flex lg:flex-row flex-col gap-8 lg:px-12 px-4 my-[2.5rem] text-right
                     items-center lg:text-[22px] text-[18px]" style="direction: rtl;">
                         <p>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد.
+                            شرکت آیریک صنعت با پتانسیل بالقوه در به کارگیری نیروهای مجرب جهت اجرای پروژه ها و تأمین تجهیزات صنعتی درسال 1392 تأسیس گردید.
+ مدیران این شرکت با استفاده از تجربیات چندین ساله در زمینه های مختلف طراحی، مشاوره و اجرای پروژه‌های صنعتی و مهندسی معکوس دست در دست یکدیگر دادند تا مجموعه‌ای توانمند را در جهت ارتقای اقتصاد و صنعت کشور بنا نهند.
+این شرکت آمادگی هرچه بیشتر خود را جهت ارائه خدمات در زمینه‌های ذیل در پروژه های صنعتی معدنی، نفت، گاز، پتروشیمی، نیروگاه، فولاد و غیره با شرکت های خصوصی و دولتی اعلام می دارد.
                         </p>
                         <img src="images/logo.jpg" class="w-[60vh]" alt="iriksanatco logo">
                     </div>
                 </div>
             </section>
+            <!-- services -->
             <section>
+                <div class="flex flex-col w-full justify-center items-center gap-8">
+                    <div class="w-full flex flex-row justify-between items-center bg-[#FDCA40]">
+                        <img class="md:w-[150px] w-[110px] rotate-180" src="images/sectionTitleRight.svg" alt="sectionTitleLeft" draggable="true" />
+                        <h2 class="font-bold lg:text-[25px] text-[20px] text-center py-3">خدمات</h2>
+                        <img class="md:w-[150px] w-[110px]" src="images/sectionTitleRight.svg" alt="sectionTitleRight" draggable="true" />
+                    </div>
+                    <div class="flex lg:flex-row flex-col justify-stretch items-stretch gap-8 px-8" style="direction: rtl; text-align: right;">
+                        <div class="flex flex-col justify-center items-start w-full h-full py-12 px-6 bg-gray-300" style="gap: 1rem; border-radius: 20px;">
+                            <h2 class="font-bold text-[20px]">واحد نسوز</h2>
+                            <h5>
+                                این مجموعه دارای یک واحد تولیدی جهت تولید مقوای قیر اندود از ضخامت 0.9 میلیمتر تا 30 میلیمتر می باشد که کاربرد آن جهت استفاده در نسوز چینی کوره های ریخته گری وذوب فلزات می باشد.
+                            </h5>
+                        </div>
+                        <div class="flex flex-col justify-center items-start w-full h-full py-12 px-6 bg-gray-300" style="gap: 1rem; border-radius: 20px;">
+                            <h2 class="font-bold text-[20px]">واحد مکانیک</h2>
+                            <h5>تامین گیربکس های صنعتی وتجهیزات مربوطه</h5>
+                        </div> 
+                        <div class="flex flex-col justify-center items-start w-full h-full py-12 px-6 bg-gray-300" style="gap: 1rem; border-radius: 20px;">
+                            <h2 class="font-bold text-[20px]">واحد تحقیق و توسعه</h2>
+                            <h5>
+                                به منظور ایجاد ساختار و گسترش همکاری های پژوهشی آموزشی و فن آورانه در زمینه مواد و انرژی این شرکت توانایی انجام پروژه های R&D  با بهره گیری از آزمایشگاه جامع وزارت علوم  و تیم تخصصی را دارد.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col justify-center items-start gap-8 px-8">
+                        <div class="flex flex-col justify-center items-start w-full h-full py-12 px-6 bg-gray-300" style="gap: 1rem; border-radius: 20px; text-align: right;  direction: rtl;">
+                            <div class="flex flex-col gap-4">
+                                <h2 class="font-bold text-[20px]">واحد برق</h2>
+                                <p>
+                                    <h5 class="font-bold text-[16px]">تامین  موتورهای الکتریکی</h5>
+                                    ازجمله خدمات ارائه شده در این واحد تامین انواع موتور های الکتریکی به صورت ساخت سفارشی می- باشد که با توجه به نیاز مشتری و به کمک تیم فنی  امکان ساخت موتور دقیقا مشابه موتور موجود که به هر دلیلی از خط تولید خارج شده است امکان پذیر می باشد. 
+                                </p>
+                                <p>
+                                    <h5 class="font-bold text-[16px]">ساخت و عرضه تابلوهای برق وتجهیزات برق صنعتی</h5>
+                                    این شرکت نمایندگی انحصاری محصولات گروه تکامل صنعت را دارا می باشدکه از این طریق عرضه¬محصولات برق صنعتی اعم از انواع تابلو های برق در سایز ها و کاربرد های متنوع ،انواع کنتاکتور، کلید های کمپکت، پوش باتون ها و انواع درایو ها به صورت بومی سازی شده با کیفیت و خدمات فوق العاده انجام می پذیرد.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- projects -->
+            <section>
+                <div class="flex flex-col items-center pt-[3rem]">
+                    <div class="w-full flex flex-row justify-between items-center bg-[#FDCA40]">
+                        <img class="md:w-[150px] w-[110px] rotate-180" src="images/sectionTitleRight.svg" alt="sectionTitleLeft" draggable="true" />
+                        <h2 class="font-bold lg:text-[25px] text-[20px] text-center py-3">پروژه ها</h2>
+                        <img class="md:w-[150px] w-[110px]" src="images/sectionTitleRight.svg" alt="sectionTitleRight" draggable="true" />
+                    </div>
+                    <div class="flex flex-col gap-4 w-full">
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-top: 2rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین تجهیزات برق صنعتی مجتمع فولاد مبارکه 
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین تجهیزات برق صنعتی شرکت ذوب آهن اصفهان
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین تجهیزات ابزار دقیق و کنترل مجتمع فولاد کویر
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین تجهیزات برق صنعتی شرکت آهن و فولاد سرمد ابرکوه
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                ساخت تابلوهای برق فشار متوسط شرکت آهن و فولاد سرمد ابر کوه
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین تجهیزات برق صنعتی شرکت پالایش و پخش فراورده های نفتی اصفهان
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                            تامین تجهیزات برق صنعتی و درایویونیت جهت پروژه های تعاونی فولاد در فولاد مبارکه
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">       
+                            تامین موتورهای 6.6 کیلو ولتی فولاد اردستان
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                            مشاوره و تامین تجهیز خط بیست کیلو ولت تعاونی آرمان سبز زیر نظر جهاد کشاورزی
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین تجهیز تاسیسات الکتریکی شهرداری منطقه 22 تهران 
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">  
+                                انجام اتوماسیون کامل تله متری و مانیتورینگ درشرکت آب و فاضلاب روستایی استان اصفهان
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                انجام بیش از دویست پروژه مربوط به سیستم تله متری دو کانال یک طرفه مخازن، جهت استفاده در کنترل سطح منابع درشرکت آب و فاضلاب روستایی استان اصفهان
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین قطعات یدکی کل کارخانه و معدن شرکت فولاد سنگ وابسته به مجتمع فولاد مبارکه
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                تامین مقوای قیر اندود جهت نسوز چینی کوره های شرکت ذوب آهن اصفهان
+                            </h3>
+                        </div>
+                        <div class="flex flex-row px-4 bg-gray-300 justify-center items-center" style="padding-block: 1.3rem; margin-inline: 10vw; border-radius: 10px;">
+                            <h3 class="font-bold lg:text-lg text-base text-center">
+                                اجرای پروژه تحقیق و توسعه با همکاری پژوهشگاه مواد و انرژی وزارت علوم تحقیقات و فن آوری
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- products -->
+            <section id="products">
                 <div class="flex flex-col items-center pt-[3rem]">
                     <div class="w-full flex flex-row justify-between items-center bg-[#FDCA40]">
                         <img class="md:w-[150px] w-[110px] rotate-180" src="images/sectionTitleRight.svg" alt="sectionTitleLeft" draggable="true" />
@@ -98,22 +254,53 @@
                         <div class="swiper productSwiper my-6">
                             <div class="swiper-wrapper px-12">
                               <div class="swiper-slide bg-[#F5F5F5] flex flex-col 
-                              text-right gap-4 rounded-2xl max-w-[20rem]">
+                              text-right gap-4 rounded-2xl max-w-[20rem] overflow-hidden m-0" style="justify-content: start;">
                                 <div>
-                                    <img src="images/products/product1.png" alt="Iriksanatco Product 1">
+                                    <img src="images/products/Industrial_electrical_equipment.png" alt="Iriksanatco Industrial Electrical Equipments">
                                 </div>
-                                <div class="mb-4 text-right flex flex-col gap-4">
-                                    <h3 class="text-xl font-bold px-4">نام محصول</h3>
-                                    <p class="text-lg px-4" style="direction: rtl;">
+                                <div class="mb-4 text-right flex flex-col justify-start gap-4">
+                                    <h3 class="text-xl font-bold px-4">برق صنعتی</h3>
+                                    <!-- <p class="text-lg px-4" style="direction: rtl;">
                                         توضیحات مربوط به محصول در این قسمت نوشته می شود.
-                                    </p>
+                                    </p> -->
                                 </div>
                               </div>
-                              <div class="swiper-slide">Slide 2</div>
-                              <div class="swiper-slide">Slide 3</div>
-                              <div class="swiper-slide">Slide 4</div>
-                              <div class="swiper-slide">Slide 5</div>
-                              <div class="swiper-slide">Slide 6</div>
+                              <div class="swiper-slide bg-[#F5F5F5] flex flex-col 
+                              text-right gap-4 rounded-2xl max-w-[20rem] overflow-hidden m-0" style="justify-content: start;">
+                                <div>
+                                    <img src="images/products/gearbox.jpg" alt="Iriksanatco Gearbox Product">
+                                </div>
+                                <div class="mb-4 text-right flex flex-col justify-start gap-4">
+                                    <h3 class="text-xl font-bold px-4">گیر بکس های صنعتی</h3>
+                                    <!-- <p class="text-lg px-4" style="direction: rtl;">
+                                        توضیحات مربوط به محصول در این قسمت نوشته می شود.
+                                    </p> -->
+                                </div>
+                              </div>
+                              <div class="swiper-slide bg-[#F5F5F5] flex flex-col 
+                              text-right gap-4 rounded-2xl max-w-[20rem] overflow-hidden m-0" style="justify-content: start;">
+                                <div>
+                                    <img src="images/products/electromotors.jpg" alt="Iriksanatco ElectroMotors Product">
+                                </div>
+                                <div class="mb-4 text-right flex flex-col justify-start gap-4">
+                                    <h3 class="text-xl font-bold px-4">موتورهای الکتریکی</h3>
+                                    <!-- <p class="text-lg px-4" style="direction: rtl;">
+                                        توضیحات مربوط به محصول در این قسمت نوشته می شود.
+                                    </p> -->
+                                </div>
+                              </div>
+                              <div class="swiper-slide bg-[#F5F5F5] flex flex-col 
+                              text-right gap-4 rounded-2xl max-w-[20rem] overflow-hidden m-0" style="justify-content: start;">
+                                <div>
+                                    <img src="images/products/roofing_felt.jpg" alt="Iriksanatco Roofing Felt Product">
+                                </div>
+                                <div class="mb-4 text-right flex flex-col justify-start gap-4">
+                                    <h3 class="text-xl font-bold px-4">مقوای قیر اندود</h3>
+                                    <!-- <p class="text-lg px-4" style="direction: rtl;">
+                                        توضیحات مربوط به محصول در این قسمت نوشته می شود.
+                                    </p> -->
+                                </div>
+                              </div>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -121,6 +308,7 @@
                     </div>
                 </div>
             </section>
+            <!-- customers -->
             <section>
                 <div class="flex flex-col items-center pt-[3rem]">
                     <div class="w-full flex flex-row justify-between items-center bg-[#FDCA40]">
@@ -131,8 +319,26 @@
                     <div class="w-full">
                         <div class="swiper coworkersSwiper" dir="rtl">
                             <div class="swiper-wrapper my-4">
-                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4" style="background-color: #fff;">
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
                                 <img src="images/poolad.png" style="aspect-ratio: 1;" width="200" alt="" />
+                              </div>
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                                <img src="images/customers/2.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                              </div>
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                                <img src="images/customers/3.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                              </div>
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                                <img src="images/customers/4.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                              </div>
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                                <img src="images/customers/5.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                              </div>
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                                <img src="images/customers/6.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                              </div>
+                              <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                                <img src="images/customers/12.jpg" style="aspect-ratio: 1;" width="200" alt="" />
                               </div>
                             </div>
                             <div class="swiper-button-next"></div>
@@ -142,25 +348,41 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="contact">
             <div class="w-full bg-[#080708] flex lg:flex-row lg:justify-between md:justify-between md:flex-row flex-col gap-12 text-white text-right py-12 px-8" style="direction: rtl;">
                 <div class="flex flex-col gap-8">
                     <div class="flex flex-col gap-8">
                         <h4 class="font-bold lg:text-[18px] md:text-[18px]">تماس با ما</h4>
-                        <p class="max-w-[36rem]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                        <p class="max-w-[36rem]">
+                            شرکت آیریک صنعت در سال 1392 تأسیس شد و با بهره‌گیری از نیروهای مجرب و تجربه‌ی مدیران خود در زمینه طراحی، مشاوره و اجرای پروژه‌های صنعتی، آماده ارائه خدمات در صنایع مختلف مانند معدن، نفت، گاز، پتروشیمی و نیروگاه‌ها به شرکت‌های خصوصی و دولتی است.
+                        </p>
                     </div>
                     <div>
                         <h4 class="font-bold lg:text-[18px] md:text-[18px]">
-                            آدرس:
+                            نشانی:
+                            اصفهان خیابان سروش کوچه 36 پلاک7
+                        </h4>
+                    </div>
+                    <div>
+                        <h4 class="font-bold lg:text-[18px] md:text-[18px]">
+                            پست الکترونیکی: 
+                            IRIKSANAT@GMAIL.com
                         </h4>
                     </div>
                     <div>
                         <h4 class="font-bold lg:text-[18px] md:text-[18px]">
                             تلفن تماس:
+                            03132251215
+                        </h4>
+                    </div>
+                    <div>
+                        <h4 class="font-bold lg:text-[18px] md:text-[18px]">
+                            تلفن همراه:
+                            09132021090
                         </h4>
                     </div>
                 </div>
-                <div class="flex justify-center">
+                <div class="flex justify-center items-center">
                     <div class="bg-gray-400 w-[20rem] h-[20rem]"></div>
                 </div>
             </div>
@@ -168,7 +390,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Initialize Swiper -->
         <script>
-            var swiper = new Swiper(".mySwiper", {
+            var swiper = new Swiper(".sliderSwipper", {
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
