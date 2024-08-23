@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
         <meta name="author" content="Alisina Soltani" />
+        <title>همکاران آیریک صنعت</title>
         <link rel="stylesheet" href="output.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Iriksanatco</title>
         <style>
             body {
                 -webkit-scroll-behavior: smooth;
                 scroll-behavior: smooth;
             }
             .swiper {
-              width: 100%;
-              height: 100%;
+                width: 100%;
+                height: 100%;
             }
         
             .swiper-slide {
-              text-align: center;
-              font-size: 18px;
-              background: #fff;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         
             .swiper-slide img {
-              display: block;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
 
             .swiper-button-next, .swiper-button-prev {
@@ -48,9 +46,9 @@
                 justify-content: center;
                 align-items: center;
             }
-          </style>
+        </style>
     </head>
-    <body class="iransans">
+    <body>
         <navbar>
             <div class="w-full flex flex-row justify-between items-center
             lg:px-12 px-6 py-3 fixed bg-white" style="top: 0; z-index: 10000; background-color: white;">
@@ -135,65 +133,43 @@
             </div>
         </navbar>
         <main>
-            <section>
-                <div class="w-full bg-gray-300 lg:h-[92vh] h-[40vh] mt-[4rem]">
-                    <div class="swiper sliderSwipper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="images/10.jpg" alt="iriksanatco home page picture 1" />
+            <div class="flex flex-col items-center pt-[3rem] mt-[4rem]">
+                <div class="w-full flex flex-row justify-between items-center bg-[#FDCA40]">
+                    <img class="md:w-[150px] w-[110px] rotate-180" src="images/sectionTitleRight.svg" alt="sectionTitleLeft" draggable="true" />
+                    <h2 class="font-bold lg:text-[25px] text-[20px] text-center py-3">همکاران</h2>
+                    <img class="md:w-[150px] w-[110px]" src="images/sectionTitleRight.svg" alt="sectionTitleRight" draggable="true" />
+                </div>
+                <div class="w-full">
+                    <div class="swiper coworkersSwiper" dir="rtl">
+                        <div class="swiper-wrapper my-4">
+                          <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                            <img src="images/poolad.png" style="aspect-ratio: 1;" width="200" alt="" />
                           </div>
-                          <div class="swiper-slide">
-                            <img src="images/11.jpg" alt="iriksanatco home page picture 2" />
+                          <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                            <img src="images/customers/2.jpg" style="aspect-ratio: 1;" width="200" alt="" />
                           </div>
-                          <div class="swiper-slide">
-                            <img src="images/13.jpg" alt="iriksanatco home page picture 3" />
+                          <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                            <img src="images/customers/3.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                          </div>
+                          <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                            <img src="images/customers/4.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                          </div>
+                          <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                            <img src="images/customers/5.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                          </div>
+                          <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                            <img src="images/customers/6.jpg" style="aspect-ratio: 1;" width="200" alt="" />
+                          </div>
+                          <div class="swiper-slide rounded-[40rem] border-2 border-black p-4 overflow-hidden" style="background-color: #fff;">
+                            <img src="images/customers/12.jpg" style="aspect-ratio: 1;" width="200" alt="" />
                           </div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                       </div>
                 </div>
-            </section>
-        </main>
-        <footer id="contact">
-            <div class="w-full bg-[#080708] flex lg:flex-row lg:justify-between md:justify-between md:flex-row flex-col gap-12 text-white text-right py-12 px-8" style="direction: rtl;">
-                <div class="flex flex-col gap-8">
-                    <div class="flex flex-col gap-8">
-                        <h4 class="font-bold lg:text-[18px] md:text-[18px]">تماس با ما</h4>
-                        <p class="max-w-[36rem]">
-                            شرکت آیریک صنعت در سال 1392 تأسیس شد و با بهره‌گیری از نیروهای مجرب و تجربه‌ی مدیران خود در زمینه طراحی، مشاوره و اجرای پروژه‌های صنعتی، آماده ارائه خدمات در صنایع مختلف مانند معدن، نفت، گاز، پتروشیمی و نیروگاه‌ها به شرکت‌های خصوصی و دولتی است.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold lg:text-[18px] md:text-[18px]">
-                            نشانی:
-                            اصفهان خیابان سروش کوچه 36 پلاک7
-                        </h4>
-                    </div>
-                    <div>
-                        <h4 class="font-bold lg:text-[18px] md:text-[18px]">
-                            پست الکترونیکی: 
-                            IRIKSANAT@GMAIL.com
-                        </h4>
-                    </div>
-                    <div>
-                        <h4 class="font-bold lg:text-[18px] md:text-[18px]">
-                            تلفن تماس:
-                            03132251215
-                        </h4>
-                    </div>
-                    <div>
-                        <h4 class="font-bold lg:text-[18px] md:text-[18px]">
-                            تلفن همراه:
-                            09132021090
-                        </h4>
-                    </div>
-                </div>
-                <div class="flex justify-center items-center">
-                    <div class="bg-gray-400 w-[20rem] h-[20rem]"></div>
-                </div>
             </div>
-        </footer>
+        </main>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Initialize Swiper -->
         <script>
