@@ -8230,10 +8230,6 @@ html:has(.drawer-open.drawer-open) {
   top: 0px;
 }
 
-.top-\[4rem\] {
-  top: 4rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -8437,6 +8433,10 @@ html:has(.drawer-open.drawer-open) {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -8499,6 +8499,10 @@ html:has(.drawer-open.drawer-open) {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .max-w-\[20rem\] {
@@ -9814,10 +9818,6 @@ html:has(.drawer-open.drawer-open) {
   vertical-align: super;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .text-\[16px\] {
   font-size: 16px;
 }
@@ -10483,11 +10483,6 @@ html:has(.drawer-open.drawer-open) {
   .md\:text-\[18px\] {
     font-size: 18px;
   }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -10513,10 +10508,6 @@ html:has(.drawer-open.drawer-open) {
 
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-  .lg\:gap-12 {
-    gap: 3rem;
   }
 
   .lg\:px-12 {
